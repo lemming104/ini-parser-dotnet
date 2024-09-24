@@ -3,7 +3,7 @@
     <RootNamespace>IniParser</RootNamespace>
     <AssemblyName>IniParser</AssemblyName>
     <TargetFrameworks>net8.0</TargetFrameworks>
-    <Version>2.6.2</Version>
+    <Version>2.6.2.1</Version>
     <AssemblyVersion>2.6.2.1</AssemblyVersion>
     <FileVersion>2.6.2.1</FileVersion>
     <SignAssembly>True</SignAssembly>
@@ -32,7 +32,7 @@ Also implements merging operations, both for complete ini files, sections, or ev
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>nuget-ini-icon.png</PackageIcon>
     <PackageTags>ini, parser, configuration, config, inifile, cfg, ini file</PackageTags>
-    <PackageId>ini-parser-new</PackageId>
+    <PackageId>ini-parser-net8</PackageId>
     <PackageReleaseNotes>Built using .NET 8.x; fixes trim warnings</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
