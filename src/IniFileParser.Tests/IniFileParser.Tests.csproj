@@ -4,14 +4,8 @@
     <OutputType>Library</OutputType>
     <IsPackable>False</IsPackable>
     <ReleaseVersion></ReleaseVersion>
-  </PropertyGroup>
-
-  <!-- Auto-select supported target frameworks based on MSBuild version -->
-  <PropertyGroup Condition="'$(MSBuildRuntimeType)'=='Core'">
-    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
-  </PropertyGroup>
-    <PropertyGroup Condition="'$(MSBuildRuntimeType)'!='Core'">
-    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>0618</NoWarn>
   </PropertyGroup>
   
   <ItemGroup>
@@ -23,10 +17,6 @@
     <PackageReference Include="NUnit" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.10.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 
   <ItemGroup>

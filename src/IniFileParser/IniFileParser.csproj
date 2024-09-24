@@ -2,13 +2,14 @@
   <PropertyGroup>
     <RootNamespace>IniParser</RootNamespace>
     <AssemblyName>IniParser</AssemblyName>
-    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <Version>2.6.2</Version>
-    <AssemblyVersion>2.6.2.0</AssemblyVersion>
-    <FileVersion>2.6.2.0</FileVersion>
+    <AssemblyVersion>2.6.2.1</AssemblyVersion>
+    <FileVersion>2.6.2.1</FileVersion>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>Properties\publickey.snk</AssemblyOriginatorKeyFile>
     <OutputType>Library</OutputType>
+    <IsTrimmable>true</IsTrimmable>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -21,18 +22,18 @@ Also implements merging operations, both for complete ini files, sections, or ev
 (*) This library is 100% .NET code and does not have any dependencies on Windows API calls in order to be portable.
 ]]></Description>
     <Authors>Ricardo Amores Hernández, SandRock</Authors>
-    <Company>SandRock</Company>
+    <Company></Company>
     <Product>INI Parser</Product>
     <Copyright>Ricardo Amores Hernández 2009-2019</Copyright>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <NoWarn>$(NoWarn);0618;1591;1573</NoWarn><!-- Ignore: Use of Deprecated, Undocumented Public Members, Undocumented Parameters -->
-    <PackageProjectUrl>https://github.com/sandrock/ini-parser-dotnet</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/lemming104/ini-parser-dotnet</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>nuget-ini-icon.png</PackageIcon>
     <PackageTags>ini, parser, configuration, config, inifile, cfg, ini file</PackageTags>
     <PackageId>ini-parser-new</PackageId>
-    <PackageReleaseNotes>Support for net40 and netstandard2.0. Version 2.6.0 was bad, avoid it. </PackageReleaseNotes>
+    <PackageReleaseNotes>Built using .NET 8.x; fixes trim warnings</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>

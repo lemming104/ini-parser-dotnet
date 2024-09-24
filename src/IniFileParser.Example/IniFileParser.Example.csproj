@@ -4,15 +4,11 @@
     <OutputType>Exe</OutputType>
     <IsPackable>False</IsPackable>
     <ReleaseVersion></ReleaseVersion>
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>0618</NoWarn>
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
 
-  <!-- Auto-select supported target frameworks based on MSBuild version -->
-  <PropertyGroup Condition="'$(MSBuildRuntimeType)'=='Core'">
-    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
-  </PropertyGroup>
-    <PropertyGroup Condition="'$(MSBuildRuntimeType)'!='Core'">
-    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
-  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\IniFileParser\IniFileParser.csproj" />
   </ItemGroup>
